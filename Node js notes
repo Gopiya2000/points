@@ -1,0 +1,5 @@
+modules:
+1.Build-in(you can use without any installation)
+2.Include........require()..function
+3.Create your own....exports keyword to make properties and methods outside the module file.
+

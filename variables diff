@@ -1,0 +1,54 @@
+let
+->hoisting(declared value moves to the top while running but the declaration place remains same),initialization should be done.
+->can be redeclared(let car=1;let car=3;)
+
+function(){
+//let car=1;
+if(cond)
+{
+let car=1;
+}
+else
+{
+print car;//1
+}
+....................................................................................................................................................
+var
+->no hoisting,cannot be redeclared,can be reassigned(let car=1;car=4;)
+
+function(){
+if(cond)
+{
+let car=1;
+}
+else
+{
+print car;//undefined
+}
+
+function(){
+if(cond)
+{
+let car=1;
+car=4;
+}
+else
+{
+print car;//4
+}
+...................................................................................................................................................
+const
+->no hoisting,cannot be redeclared,cannot be reassigned
+->similar to var except reassignning
+........................................................................
+const(object)
+->values can be changed but the object identification cannot be changed.
+->const person{
+name="gopiya";
+}
+
+person.name("gopiya");
+->can be done
+person(age:19);
+->cannot be done
+
